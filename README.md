@@ -1,4 +1,4 @@
-# Soquiat-TFAct3
+# Three Tier Highly Scalable Web Application
 
 ## Description
 
