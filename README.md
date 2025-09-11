@@ -10,7 +10,7 @@ This GitLab Repository is dedicated for my Terraform Final Activity in my intern
 
 Here is the architecture diagram for this project: 
 
-![System Architecture](../terraformproject/output/TerraformDiagram.png)
+![System Architecture](../output/TerraformDiagram.png)
 
 ### Resources
 
@@ -87,8 +87,6 @@ Follow this steps when executing this project
 
 2. Run the `statefile-statelocking` configuration file using the following execution commands 
 
-To execute the folders in this repository, run this commands in your command line:
-
     ```bash
     # change directory
     cd terraformProject/statefile-statelocking
@@ -102,6 +100,7 @@ To execute the folders in this repository, run this commands in your command lin
     # This command will deploy all the resources to your AWS account
     terraform apply
     ```
+
 >[!WARNING]
 >Before executing terraform init, ensure that you already have terraform set up in your local device, otherwise, it will not work
 
@@ -116,15 +115,15 @@ Here are the expected outputs for this step:
 
 Terraform Init: 
 
-![Terraform Init](../terraformProject/output/init-ss.png)
+![Terraform Init](../output/init-ss.png)
 
 Terraform Plan:
 
-![Terraform Plan](../terraformProject/output/plan-ss.png)
+![Terraform Plan](../output/plan-ss.png)
 
 Terraform Apply: 
 
-![Terraform Apply](../terraformProject/output/apply-ss.png)
+![Terraform Apply](../output/apply-ss.png)
 
 3. Create a backend.hcl file in the root folder, and paste this code snippet:
 
@@ -162,15 +161,15 @@ Here are the expected output for this step:
 
 Terraform Init: 
 
-![Terraform Init](../terraformProject/output/init-r.png)
+![Terraform Init](../output/init-r.png)
 
 Terraform Plan:
 
-![Terraform Plan](../terraformProject/output/plan-r.png)
+![Terraform Plan](../output/plan-r.png)
 
 Terraform Apply: 
 
-![Terraform Apply](../terraformProject/output/apply-r.png)
+![Terraform Apply](../output/apply-r.png)
 
 :white_check_mark: Great! Now you have successfully deployed your own Multi Tiered Web Application in AWS using Terraform. For the next steps, check out for the following features:
 
@@ -187,5 +186,5 @@ Test the following features for this System:
 > This project is continuously updated and maintained to accommodate changes in AWS and Terraform
 
 If you like this repository, let's connect on the following social media platforms:
-:point_right: [LinkedIn](https://www.linkedin.com/in/soqwapo/)
-:point_right: [Instagram](https://www.instagram.com/soqwapo/)
+- :point_right: [LinkedIn](https://www.linkedin.com/in/soqwapo/)
+- :point_right: [Instagram](https://www.instagram.com/soqwapo/)
