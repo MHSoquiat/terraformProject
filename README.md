@@ -10,7 +10,7 @@ This GitLab Repository is dedicated for my Terraform Final Activity in my intern
 
 Here is the architecture diagram for this project: 
 
-![System Architecture](../terraformProject/output/TerraformDiagram.png)
+![System Architecture](output/TerraformDiagram.png)
 
 ### Resources
 
@@ -38,14 +38,14 @@ Here is the architecture diagram for this project:
         - Desired: 2
         - Scaling rule to scale out if CPUUtilization >= 40% for 1 minute
         - Scaling rule to scale in if CPUUtilization <= 10% for 1 minute
-        - Userdata - [Userdata for Frontend](../terraformProject/root/modules/frontend/frontend_userdata.sh)
+        - Userdata - [Userdata for Frontend](root/modules/frontend/frontend_userdata.sh)
     - ASG 2 for backend
         - Minimum: 2
         - Maximum: 4
         - Desired: 2
         - Scaling rule to scale out if CPUUtilization >= 40% for 1 minute
         - Scaling rule to scale in if CPUUtilization <= 10% for 1 minute
-        - Userdata - [Userdata for Backend](../terraformProject/root/modules/backend/backend_userdata.sh)
+        - Userdata - [Userdata for Backend](root/modules/backend/backend_userdata.sh)
 
 > If the EC2 instance is unhealthy in the target group/load balancer, ASG should replace the instance
 
@@ -115,15 +115,15 @@ Here are the expected outputs for this step:
 
 Terraform Init: 
 
-![Terraform Init](../terraformProject/output/init-ss.png)
+![Terraform Init](output/init-ss.png)
 
 Terraform Plan:
 
-![Terraform Plan](../terraformProject/output/plan-ss.png)
+![Terraform Plan](output/plan-ss.png)
 
 Terraform Apply: 
 
-![Terraform Apply](../terraformProject/output/apply-ss.png)
+![Terraform Apply](output/apply-ss.png)
 
 3. Create a backend.hcl file in the root folder, and paste this code snippet:
 
@@ -161,15 +161,15 @@ Here are the expected output for this step:
 
 Terraform Init: 
 
-![Terraform Init](../terraformProject/output/init-r.png)
+![Terraform Init](output/init-r.png)
 
 Terraform Plan:
 
-![Terraform Plan](../terraformProject/output/plan-r.png)
+![Terraform Plan](output/plan-r.png)
 
 Terraform Apply: 
 
-![Terraform Apply](../terraformProject/output/apply-r.png)
+![Terraform Apply](output/apply-r.png)
 
 :white_check_mark: Great! Now you have successfully deployed your own Multi Tiered Web Application in AWS using Terraform. For the next steps, check out for the following features:
 
