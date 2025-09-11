@@ -1,14 +1,14 @@
 variable "s3_bucket_name" {
   description = "The name of the S3 bucket to store the Terraform state"
   type        = string
-  default     = "soquiat-tffinal-s3"
+  default     = "soki-s3"
 }
 
 variable "s3_bucket_tags" {
   description = "Tags to apply to the S3 bucket"
   type        = map(string)
   default = {
-    Name = "soquiat-tffinal-s3"
+    Name = "soki-s3"
   }
 }
 
@@ -37,13 +37,15 @@ variable "s3_lifecycle_transition_days" {
 variable "dynamodb_table_name" {
   description = "DynamoDB table name for state locking"
   type        = string
-  default     = "soquiat-tffinal-db"
+  default     = "soki-db"
 }
 
 variable "tags" {
+  description = "Tags for the resources"
+  type        = map(string)
   default = {
-    "Name"        = "Soquiat-FinalProject"
-    "ProjectCode" = "Terraform101-CloudIntern"
+    "Name"        = "Sokii"
+    "ProjectCode" = "TerraformProject"
     "Engineer"    = "Soquiat-MarcHendri"
   }
 }

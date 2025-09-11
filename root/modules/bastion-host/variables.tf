@@ -5,14 +5,15 @@ variable "ami" {
 variable "key_name" {
   description = "value"
   type        = string
-  default     = "Soki-TFFinalAct"
+  default     = "Soki"
 }
 
 variable "tags" {
-  type = map(string)
+  description = "Tags for the resources"
+  type        = map(string)
   default = {
-    "Name"        = "Soquiat-FinalProject"
-    "ProjectCode" = "Terraform101-CloudIntern"
+    "Name"        = "Sokii"
+    "ProjectCode" = "TerraformProject"
     "Engineer"    = "Soquiat-MarcHendri"
   }
 }

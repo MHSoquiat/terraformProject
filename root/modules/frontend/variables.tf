@@ -11,7 +11,7 @@ variable "launch_template_config" {
     name          = "FrontEndLaunchTemplate"
     ami           = "ami-00ca32bbc84273381"
     instance_type = "t3.micro"
-    key_name      = "Soki-TFFinalAct"
+    key_name      = "Soki"
     monitoring    = true
     userdata_file = "frontend_userdata.sh"
   }
@@ -233,10 +233,11 @@ variable "health_check_config" {
 }
 
 variable "tags" {
-  type = map(string)
+  description = "Tags for the resources"
+  type        = map(string)
   default = {
-    "Name"        = "Soquiat-FinalProject"
-    "ProjectCode" = "Terraform101-CloudIntern"
+    "Name"        = "Sokii"
+    "ProjectCode" = "TerraformProject"
     "Engineer"    = "Soquiat-MarcHendri"
   }
 }

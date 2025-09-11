@@ -9,7 +9,3 @@ variable "access_key" {
 variable "secret_key" {
   default = null
 }
-
-variable "vpc_cidr2" {
-  default = "10.1.0.0/16"
-}
