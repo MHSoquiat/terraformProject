@@ -10,7 +10,7 @@ This GitLab Repository is dedicated for my Terraform Final Activity in my intern
 
 Here is the architecture diagram for this project: 
 
-![System Architecture](../output/TerraformDiagram.png)
+![System Architecture](../terraformProject/output/TerraformDiagram.png)
 
 ### Resources
 
@@ -115,15 +115,15 @@ Here are the expected outputs for this step:
 
 Terraform Init: 
 
-![Terraform Init](../output/init-ss.png)
+![Terraform Init](../terraformProject/output/init-ss.png)
 
 Terraform Plan:
 
-![Terraform Plan](../output/plan-ss.png)
+![Terraform Plan](../terraformProject/output/plan-ss.png)
 
 Terraform Apply: 
 
-![Terraform Apply](../output/apply-ss.png)
+![Terraform Apply](../terraformProject/output/apply-ss.png)
 
 3. Create a backend.hcl file in the root folder, and paste this code snippet:
 
@@ -161,15 +161,15 @@ Here are the expected output for this step:
 
 Terraform Init: 
 
-![Terraform Init](../output/init-r.png)
+![Terraform Init](../terraformProject/output/init-r.png)
 
 Terraform Plan:
 
-![Terraform Plan](../output/plan-r.png)
+![Terraform Plan](../terraformProject/output/plan-r.png)
 
 Terraform Apply: 
 
-![Terraform Apply](../output/apply-r.png)
+![Terraform Apply](../terraformProject/output/apply-r.png)
 
 :white_check_mark: Great! Now you have successfully deployed your own Multi Tiered Web Application in AWS using Terraform. For the next steps, check out for the following features:
 
@@ -177,11 +177,11 @@ Terraform Apply:
 
 Test the following features for this System:
 
-- [] Access Bastion Host through SSH
-- [] Access EC2 instances deployed in Auto Scaling group through the Bastion Host
-- [] Access the Web Application by using the Frontend Application Load Balancer DNS Name
-- [] Stress test an EC2 instance to increase or decrese the value of CPUUtilization to test Auto Scaling Group
-- [] Kill or Manually force an EC2 instance to be unhealthy to test Application Load Balancer and Auto Scaling Group
+- [ ] Access Bastion Host through SSH
+- [ ] Access EC2 instances deployed in Auto Scaling group through the Bastion Host
+- [ ] Access the Web Application by using the Frontend Application Load Balancer DNS Name
+- [ ] Stress test an EC2 instance to increase or decrese the value of CPUUtilization to test Auto Scaling Group
+- [ ] Kill or Manually force an EC2 instance to be unhealthy to test Application Load Balancer and Auto Scaling Group
 
 > This project is continuously updated and maintained to accommodate changes in AWS and Terraform
 
